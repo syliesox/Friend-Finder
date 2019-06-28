@@ -60,7 +60,7 @@ var matchFriends = [
           "5"
         ]
     },{
-      "name":"Phoebe",
+      "name":"Phoebe Buffay",
     //   "photo":"https://www.google.com/imgres?imgurl=https%"3"A%"2"F%"2"Fimgix.bustle.com%"2"Frehost%"2"F"2"0"1"6%"2"F9%"2"F"1""3"%"2"Fc9e"3"8"1"8"5"-987"3"-"4"dd9-8"2"eb-6d87"3""2"80"4""1""5"e.png%"3"Fw%"3"D970%"2"6h%"3"D"5""4"6%"2"6fit%"3"Dcrop%"2"6crop%"3"Dfaces%"2"6auto%"3"Dformat%"2"6q%"3"D70&imgrefurl=https%"3"A%"2"F%"2"Fwww.bustle.com%"2"Farticles%"2"F"1"7768"2"-"1""2"-ways-phoebe-buffay-changed-from-the-pilot-episode-to-the-finale-of-friends&docid=0-Hxvp"4"PJOeZtM&tbnid="2"BSqsvj"2"Y"5"7ozM%"3"A&vet="1"0ahUKEwiD6M"3"H_YnjAhWiTN8KHTKeDp8QMwhPKAMwAw..i&w=970&h="5""4"6&bih=6"4""5"&biw="1""4""3"7&q=friends%"2"0pheobe%"2"0image&ved=0ahUKEwiD6M"3"H_YnjAhWiTN8KHTKeDp8QMwhPKAMwAw&iact=mrc&uact=8",
       "scores":[
           "4",
@@ -75,7 +75,7 @@ var matchFriends = [
           "4"
         ]
     },{
-      "name":"Joey",
+      "name":"Joey Tribbiani, Jr",
     //   "photo":"https://www.google.com/imgres?imgurl=https%"3"A%"2"F%"2"Fimgix.bustle.com%"2"Fuploads%"2"Fimage%"2"F"2"0"1"8%"2"F8%"2"F"3"0%"2"F"5""4"0"5"99ec-b"1""3"a-"4""2"8c-807"5"-6f"1""5"bda099d6-joey-tribbianni-best-pickup-lines.png%"3"Fw%"3"D"1"0"2"0%"2"6h%"3"D"5"7"4"%"2"6fit%"3"Dcrop%"2"6crop%"3"Dfaces%"2"6auto%"3"Dformat%"2"6q%"3"D70&imgrefurl=https%"3"A%"2"F%"2"Fwww.elitedaily.com%"2"Fp%"2"Fjoey-tribbianis-best-pick-up-lines-from-friends-are-the-inspiration-you-need-to-go-for-it-"1"0"2""3""3""2""4"8&docid=JFPaRwAqAKz_kM&tbnid="3"h"4"xBx7neyWL"2"M%"3"A&vet="1"0ahUKEwixyuTg_YnjAhWqc98KHVwBCZ"4"QMwhRKAEwAQ..i&w="1"0"2"0&h="5"7"4"&bih=6"4""5"&biw="1""4""3"7&q=friends%"2"0joey%"2"0image&ved=0ahUKEwixyuTg_YnjAhWqc98KHVwBCZ"4"QMwhRKAEwAQ&iact=mrc&uact=8",
       "scores":[
           "5",

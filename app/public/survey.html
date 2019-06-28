@@ -7,6 +7,7 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
 
@@ -18,19 +19,19 @@
         <h2>About You</h2>
         <label>Name (Required):</label>
         <br>
-        <input type="text" id="name" required class="form-control">
+        <input type="text" id="name" required class="answer">
         <br>
         <label>Link to photo image (Required):</label>
         <br>
-        <input type="text" id="image" required class="form-control">
+        <input type="text" id="image" required class="answer">
     </div>
     <hr>
     <div class="questions shadow">
         <div class="shadow">
             <h4>Question 1</h4>
             <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q1">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -42,8 +43,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 2</h4>
             <p>Generally speaking, you rely more on your experience than your imagination.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q2">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -55,8 +56,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 3</h4>
             <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q3">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -68,8 +69,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 4</h4>
             <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q4">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -81,8 +82,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 5</h4>
             <p>People can rarely upset you.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q5">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -94,8 +95,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 6</h4>
             <p>It is often difficult for you to relate to other people’s feelings.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q6">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -107,8 +108,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 7</h4>
             <p>In a discussion, truth should be more important than people’s sensitivities.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q7">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -120,8 +121,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 8</h4>
             <p>You rarely get carried away by fantasies and ideas.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q8">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -133,8 +134,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 9</h4>
             <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q9">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -146,8 +147,8 @@
         <div class="question-wrapper shadow">
             <h4>Question 10</h4>
             <p>You feel more energetic after spending time with a group of people.</p>
-            <select class="chosen-select" id="q1">
-                <option value></option>
+            <select class="answer" id="q10">
+                <option disabled selected> -- Select One --</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -157,8 +158,109 @@
         </div>
         <hr><br>
         <div>
-            <a href="/"><button class="btn btn-lg btn-info btn-block shadow" id="submit-survey"> Submit </button></a>
+            <button class="btn btn-lg btn-info btn-block shadow" id="submit-survey"> Submit </button>
         </div>
         <br><br>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+            <p><span class="footer-container"><a class="text-aqua" href="/api/friends">API Friends List</a> | <a href="https://github.com/syliesox/Friend-Finder" class="text-aqua">Github Repo</a></span></p>
+    </div>
+  </footer>
+
+  <!-- Modal set up -->
+  <div class="modal" id="results-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Your Best Match:</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+
+            <!-- Content of the modal -->
+            <div class="modal-body">
+                <!-- Where the matched friend's name will display -->
+                <div id="match-name"></div>
+                <!-- Where the matched friend's photo will display -->
+                <div id="match-image"></div>
+            </div>
+
+            <!-- Close Button -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+    <script>
+    
+
+    $("#submit-survey").on("click", function(event) {
+        // prevent page from reloading
+        event.preventDefault();
+        // console.log(validation() === true);
+        // On click, grab the form responses if the validation returns true
+        if (validation() === true) {
+            var userResponses = {
+                name: $("#name").val().trim(),
+                photo: $("#image").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            };
+            console.log(userResponses);
+
+            // Now post the results to the friends API
+            $.post("api/friends", userResponses, function(data) {
+
+                // Tell the modal what info to display and where
+                $("#match-name").html("<h3>" + data.name + "</h3>");
+                $("#match-image").html("<img src=" + data.photo + ">");
+
+                // Toggle the view of the modal
+                $("#results-modal").modal("toggle");
+            })
+        } else {
+            alert("Please fill out all questions!");
+        }
+    });
+
+    function validation() {
+        var valid = true;
+        $(".answer").each(function() {
+            
+            if ($(this).val() === "") {
+                // if any values are false, then set valid to false
+                valid = false;
+            } else {
+                // if all values are true, then set valid to true
+                valid = true
+            }
+        });
+        // return the value that is assigned to valid above
+        return valid;
+    }
+    
+    
+    </script>
+
+</body>
+
+</html>
+

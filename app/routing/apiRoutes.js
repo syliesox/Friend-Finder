@@ -12,7 +12,47 @@ module.exports = function(app) {
     });
     // This route will calculate and display the best match when the survey submit button is clicked
     app.post("/api/friends", function(req, res) {
-        
+        // Hold matched friend's data here
+        var matchedFriend = {
+            name: "",
+            photo: "",
+            differenceScore: ""
+        };
+
+        // Grab user's responses from the survey
+        var userResponses = req.body;
+        var userScores = userResponses.scores;
+        // This variable will store the differences between the user's scores and each of the friends' scores
+        var calculatedDifference;
+
+        // Must loop through each of the friends to get their scores and calculate differences
+        for (var i = 0; i < matchFriends.length; i++) {
+            var friendsData = matchFriends[i];
+            calculatedDifference = 0;
+
+            // console.log(friendsData.name);
+
+            // Now we need to loop through and get the scores of the friends
+            for (var j = 0; j < friendsData.scores.length; j++) {
+
+                var friendScore = friendsData.scores[i];
+                var userScore = userScores[j];
+
+                // Calculation of the differences of each respective score
+                calculatedDifference += Math.abs(parseInt(userScore) - parseInt(friendScore));
+            }
+
+            if (calculatedDifference <= matchedFriend.differenceScore) {
+                matchedFriend.name = friendScore.name;
+                matchedFriend.photo = friendScore.photo;
+                matchedFriend.differenceScore = calculatedDifference; 
+            }
+        }
+        // Push user data to the matchFriends array on the friends.js file
+        matchFriends.push(userResponses);
+
+        // Return matched friend's data as JSON to be interpreted on the modal on the survey page
+        res.json(matchedFriend);
     });
 
 };
