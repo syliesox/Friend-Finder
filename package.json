@@ -15,6 +15,6 @@
     "require": "^2.4.20"
   },
   "engines": {
-    "node": "10.15.1npm n"
+    "node": "10.x"
   }
 }
